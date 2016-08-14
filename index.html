@@ -1,23 +1,22 @@
 ---
 layout: default
 ---
+<section class="row">
+  <article class="col-sm-12 col-md-5">
+    <div class="red">
+      image goes here
+    </div>
+  </article>
+  <article class="col-sm-12 col-md-7 blue">
+    <div class="blue">
+      <div>August 14, 2016</div>
+      <div>Radio Coffee and Beer</div>
+      <h1>Coffee With Ashley Hathaway</h1>
+      <h3>Senior Dev Evangelist, IBM Watson</h3>
+      <div>
+        <a href="#">Read Interview</a>
+      </div>
+    </div>
+  </article>  
+</section>
 
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
